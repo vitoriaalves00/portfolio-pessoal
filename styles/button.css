@@ -1,0 +1,58 @@
+:root {
+  --darkgrey: #141414;
+  --grey: #202020;
+  --lightgrey: #dbdbdb;
+  --pink: #ac274f;
+  --lightpink: #faa0a0;
+}
+
+.btn {
+  background-color: var(--pink);
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  color: var(--lightgrey);
+  font-size: 16px;
+}
+.btn a {
+  text-decoration: none;
+  padding: 10px 70px;
+}
+.contactButton {
+  background-color: var(--pink);
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.contactButton a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+.contactButton:hover {
+  background-color: #7c1433;
+}
+
+.btn:hover {
+  background-color: #7c1433;
+}
+
+#button01 {
+  width: 220px;
+  height: 40px;
+}
+
+#button02 {
+  width: 140px;
+  height: 40px;
+  align-self: flex-end;
+}

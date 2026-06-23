@@ -1,0 +1,93 @@
+:root {
+  --darkgrey: #141414;
+  --grey: #202020;
+  --lightgrey: #dbdbdb;
+  --pink: #ac274f;
+  --lightpink: #faa0a0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin-top: 70px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 480px;
+  height: 480px;
+}
+#socialMedia {
+  display: flex;
+  margin-top: 30px;
+  gap: 16px;
+}
+.span a {
+  text-decoration: none;
+  color: var(--lightpink);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input {
+  border: none;
+  border-radius: 12px;
+  background-color: var(--grey);
+  padding: 15px;
+  width: 268px;
+  height: 40px;
+}
+input::placeholder {
+  color: #595959;
+}
+
+label {
+  font-size: 12px;
+  color: #595959;
+  display: block;
+}
+
+textarea {
+  background-color: var(--grey);
+  border: none;
+  width: 100%;
+  height: 200px;
+  padding: 12px;
+  resize: none;
+  max-height: 250px;
+  border-radius: 12px;
+}
+
+/* botar o botao de enviar do lado esquerdo */

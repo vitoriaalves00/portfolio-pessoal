@@ -1,0 +1,51 @@
+:root {
+  --darkgrey: #141414;
+  --grey: #202020;
+  --lightgrey: #dbdbdb;
+  --pink: #ac274f;
+  --lightpink: #faa0a0;
+}
+
+/* trocando o svg do background */
+.otherBackground {
+  background-image: url(/assets/svg10.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Estilizando os cards do Sobre mim e do Portfolio */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  grid-auto-rows: 410px;
+  margin-top: 70px;
+  gap: 40px 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--grey);
+  justify-content: center;
+  padding: 20px 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px 5px rgba(172, 39, 79, 0.7);
+}
+
+/* Estilizando os cards da Formação */
+.cards-education {
+  display: grid;
+  grid-auto-rows: 125px;
+  margin-top: 70px;
+  gap: 40px 30px;
+  justify-content: center;
+}
+
+.cardEducation {
+  background-color: var(--grey);
+  justify-content: center;
+  padding: 20px 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px 5px rgba(172, 39, 79, 0.7);
+}

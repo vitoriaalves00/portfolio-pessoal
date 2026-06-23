@@ -1,0 +1,38 @@
+:root {
+  --darkgrey: #141414;
+  --grey: #202020;
+  --lightgrey: #dbdbdb;
+  --pink: #ac274f;
+  --lightpink: #faa0a0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin-top: 70px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 480px;
+  height: 480px;
+}
+
+#hiTitle {
+  color: var(--lightpink);
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 50px 20px rgba(172, 39, 79, 0.7);
+}

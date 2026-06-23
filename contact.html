@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio Pessoal</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/button.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navUl">
+          <li class="navLi">
+            <a href="home.html" class="navLink" id="navLink">Home</a>
+          </li>
+          <li class="navLi">
+            <a href="about.html" class="navLink" id="navLink">Sobre mim!</a>
+          </li>
+          <li class="navLi">
+            <a href="education.html" class="navLink" id="navLink">Formação</a>
+          </li>
+          <li class="navLi">
+            <a href="portfolio.html" class="navLink" id="navLink">Portfólio</a>
+          </li>
+          <li class="navLi">
+            <a href="contact.html" class="navLink active" id="navLink"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <h1 class="title">Entre em contato!</h1>
+        <p>
+          Estou aberta a novas oportunidades, colaborações e feedbacks. Sinta-se
+          à vontade para entrar em contato! Meu email:
+          <span class="span"
+            ><a href="mailto:vitoriaalves0santos@gmail.com"
+              >vitoriaalves0santos@gmail.com</a
+            >
+          </span>
+        </p>
+        <div id="socialMedia">
+          <button class="contactButton">
+            <a href="https://www.instagram.com/viviz.as/" target="_blank"
+              ><img src="/assets/instagram.png" id="instagramIcon"
+            /></a>
+          </button>
+          <button class="contactButton">
+            <a href="https://github.com/vitoriaalves00" target="_blank"
+              ><img src="/assets/github.png"
+            /></a>
+          </button>
+        </div>
+      </div>
+
+      <form class="contactForm">
+        <fieldset class="fieldset">
+          <div class="user">
+            <div class="inputGroup">
+              <label for="name">Nome: </label>
+              <input id="name" type="text" placeholder="Digite seu nome" />
+            </div>
+
+            <div class="inputGroup">
+              <label for="email">Email: </label>
+              <input id="email" type="email" placeholder="Digite seu email" />
+            </div>
+          </div>
+
+          <textarea
+            id="textArea"
+            placeholder="Digite sua mensagem..."
+          ></textarea>
+
+          <button class="btn" id="button02">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <button class="homebutton">
+        <a href="home.html"><img src="assets/home.png" alt="" /></a>
+      </button>
+    </footer>
+  </body>
+</html>

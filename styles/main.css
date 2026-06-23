@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Dancing+Script:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto-mono", monospace;
+  color: var(--lightgrey);
+}
+
+:root {
+  --darkgrey: #141414;
+  --grey: #202020;
+  --lightgrey: #dbdbdb;
+  --pink: #ac274f;
+  --lightpink: #faa0a0;
+}
+
+body {
+  background-image: url(/assets/svg03.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+}
+
+.navUl {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.navLi .navLink {
+  display: block;
+  text-decoration: none;
+  color: var(--lightpink);
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navLi .navLink.active {
+  font-weight: 800;
+}
+
+.navLi .navLink:hover {
+  text-decoration: underline;
+  color: var(--pink);
+}
+
+footer {
+  padding: 50px 0px 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.homebutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.title {
+  color: var(--pink);
+  font-family: "Bitcount Prop Double", system-ui;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: var(--lightpink);
+  font-family: "Bitcount Prop Double", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.h3subtitle {
+  color: var(--pink);
+  font-size: 18px;
+  padding: 10px 0px;
+}
