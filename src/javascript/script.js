@@ -124,7 +124,7 @@ function nameIsValid(value) {
     return validator;
   }
 
-  const regex = /^[a-zA-Z]\s+$/;
+  const regex = /^[a-zA-Z\s]+$/;
 
   if (!regex.test(value)) {
     validator.isValid = false;
