@@ -1,11 +1,3 @@
-:root {
-  --darkgrey: #141414;
-  --grey: #202020;
-  --lightgrey: #dbdbdb;
-  --pink: #ac274f;
-  --lightpink: #faa0a0;
-}
-
 /* CSS página de contato */
 
 main {
@@ -126,4 +118,43 @@ textarea {
   color: #595959;
   font-size: 12px;
   margin: 4px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .fieldset {
+    width: 100%;
+  }
+
+  .inputBox {
+    flex-direction: row;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  #button02 {
+    width: 120px;
+    align-self: flex-end;
+  }
 }

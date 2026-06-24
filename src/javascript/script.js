@@ -1,36 +1,34 @@
 const form = document.querySelector("#form");
 
+const fields = [
+  {
+    id: "name",
+    label: "Nome",
+    validator: nameIsValid,
+  },
+
+  {
+    id: "email",
+    label: "Email",
+    validator: emailIsValid,
+  },
+  {
+    id: "subject",
+    label: "Assunto",
+    validator: subjectIsValid,
+  },
+  {
+    id: "message",
+    label: "Mensagem",
+    validator: messageIsValid,
+  },
+];
 // eventos
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const fields = [
-    {
-      id: "name",
-      label: "Nome",
-      validator: nameIsValid,
-    },
-
-    {
-      id: "email",
-      label: "Email",
-      validator: emailIsValid,
-    },
-    {
-      id: "subject",
-      label: "Assunto",
-      validator: subjectIsValid,
-    },
-    {
-      id: "message",
-      label: "Mensagem",
-      validator: messageIsValid,
-    },
-  ];
-
   let formIsValid = true;
-
-  // validando os valores de nome, email, assunto e mensagem de acordo com as funções "classe"IsValid
+  // evento que ocorre após validação de nome, email, assunto e mensagem de acordo com as funções "classe"IsValid
 
   fields.forEach(function (field) {
     const input = document.getElementById(field.id);
@@ -59,9 +57,10 @@ form.addEventListener("submit", function (e) {
   emailjs.init("GjHA3fPji6uL_LMca");
   const serviceID = "service_tr82g75";
   const templateID = "template_11qkgbv";
-  const submitButton = document.getElementById("#button02");
+  const submitButton = document.getElementById("button02");
 
   if (!formIsValid) return;
+  submitButton.textContent = "Enviando...";
 
   const formData = {
     name: document.getElementById("name").value,
@@ -82,7 +81,7 @@ form.addEventListener("submit", function (e) {
         },
       }).showToast();
 
-      document.getElementById("form").reset();
+      resetForm();
     })
     .catch((error) => {
       console.error("Erro ao enviar a mensagem:", error);
@@ -94,11 +93,14 @@ form.addEventListener("submit", function (e) {
           color: "#dbdbdb",
         },
       }).showToast();
-      document.getElementById("form").reset();
+      resetForm();
+    })
+    .finally(() => {
+      submitButton.textContent = "Enviar";
     });
 });
 
-// FUNÇÕES
+// FUNÇÕES validando os campos: nome, email, assunto e mensagem.
 
 function isEmpty(value) {
   return value === "";
@@ -182,4 +184,17 @@ function messageIsValid(value) {
     return validator;
   }
   return validator;
+}
+
+function resetForm() {
+  document.getElementById("form").reset();
+
+  fields.forEach(function (field) {
+    const input = document.getElementById(field.id);
+    const inputGroup = input.closest(".inputGroup");
+    const errorSpan = inputGroup.querySelector(".error");
+
+    errorSpan.innerHTML = "";
+    inputGroup.classList.remove("invalid", "valid");
+  });
 }

@@ -16,6 +16,8 @@
   --lightpink: #faa0a0;
 }
 
+/* main css para definições gerais das páginas como menu, background, títulos, subtitulos, tipo, tamanho e cor da fonte principal de texto*/
+
 body {
   background-image: url(/src/assets/background-01.svg);
   background-size: cover;
@@ -110,4 +112,28 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #faa0a0; /* cor ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .navUl {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .navLi .navLink {
+    padding: 10px 6px;
+  }
+
+  .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
 }
