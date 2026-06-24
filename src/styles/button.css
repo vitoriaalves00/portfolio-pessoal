@@ -6,6 +6,8 @@
   --lightpink: #faa0a0;
 }
 
+/* estilizando os botões */
+
 .btn {
   background-color: var(--pink);
   cursor: pointer;
@@ -16,7 +18,8 @@
 }
 .btn a {
   text-decoration: none;
-  padding: 10px 70px;
+  padding: 10px 65px;
+  font-size: 16px;
 }
 .contactButton {
   background-color: var(--pink);
@@ -47,6 +50,7 @@
 }
 
 #button01 {
+  white-space: nowrap;
   width: 220px;
   height: 40px;
 }
@@ -54,5 +58,11 @@
 #button02 {
   width: 140px;
   height: 40px;
+  margin-top: 10px;
   align-self: flex-end;
+}
+
+#gitButton {
+  width: 65px;
+  height: 32px;
 }

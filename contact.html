@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio Pessoal</title>
-    <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/button.css" />
-    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/button.css" />
+    <link rel="stylesheet" href="/src/styles/contact.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <!--            
+    -->
   </head>
   <body>
+    <!-- MENU -->
     <header>
       <nav class="navbar">
         <ul class="navUl">
@@ -33,6 +45,7 @@
       </nav>
     </header>
 
+    <!-- conteudo principal, caixa de contato e formulário de contato -->
     <main>
       <div class="content">
         <h1 class="title">Entre em contato!</h1>
@@ -48,45 +61,66 @@
         <div id="socialMedia">
           <button class="contactButton">
             <a href="https://www.instagram.com/viviz.as/" target="_blank"
-              ><img src="/assets/instagram.png" id="instagramIcon"
+              ><img src="/src/assets/instagram.png" id="instagramIcon"
             /></a>
           </button>
           <button class="contactButton">
             <a href="https://github.com/vitoriaalves00" target="_blank"
-              ><img src="/assets/github.png"
+              ><img src="/src/assets/github.png"
             /></a>
           </button>
         </div>
       </div>
 
-      <form class="contactForm">
+      <form method="post" class="contactForm" id="form">
         <fieldset class="fieldset">
-          <div class="user">
+          <div class="inputBox">
             <div class="inputGroup">
               <label for="name">Nome: </label>
               <input id="name" type="text" placeholder="Digite seu nome" />
+              <span class="error"></span>
             </div>
 
             <div class="inputGroup">
               <label for="email">Email: </label>
               <input id="email" type="email" placeholder="Digite seu email" />
+              <span class="error"></span>
             </div>
           </div>
 
-          <textarea
-            id="textArea"
-            placeholder="Digite sua mensagem..."
-          ></textarea>
+          <div class="inputGroup">
+            <label for="subject">Assunto: </label>
+            <input id="subject" type="text" placeholder="Digite seu assunto" />
+            <span class="error"></span>
+          </div>
 
-          <button class="btn" id="button02">Enviar</button>
+          <div class="inputGroup">
+            <label for="message">Mensagem: </label>
+            <textarea
+              class="message"
+              id="message"
+              name="message"
+              placeholder="Digite sua mensagem..."
+            ></textarea>
+            <span class="error"></span>
+          </div>
+
+          <button type="submit" class="btn" id="button02">Enviar</button>
         </fieldset>
       </form>
     </main>
 
     <footer class="footer">
       <button class="homebutton">
-        <a href="home.html"><img src="assets/home.png" alt="" /></a>
+        <a href="home.html"><img src="/src/assets/home.png" alt="" /></a>
       </button>
     </footer>
+
+    <!-- scripts -->
+    <script src="/src/javascript/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </body>
 </html>

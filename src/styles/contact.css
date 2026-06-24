@@ -6,6 +6,8 @@
   --lightpink: #faa0a0;
 }
 
+/* CSS página de contato */
+
 main {
   display: flex;
   justify-content: center;
@@ -38,16 +40,17 @@ main {
   justify-content: center;
   align-items: center;
   border: none;
+  margin-top: 30px;
 }
 
 .fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
 }
 
-.user {
+.inputBox {
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -58,7 +61,7 @@ main {
 .inputGroup {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
 }
 
 input {
@@ -69,6 +72,11 @@ input {
   width: 268px;
   height: 40px;
 }
+#subject {
+  width: 100%;
+  margin: 0;
+}
+
 input::placeholder {
   color: #595959;
 }
@@ -90,4 +98,32 @@ textarea {
   border-radius: 12px;
 }
 
-/* botar o botao de enviar do lado esquerdo */
+/* trocando cores dos inputs para validação */
+
+.inputGroup.invalid input {
+  border: 1px solid var(--pink);
+}
+.inputGroup.invalid label {
+  color: var(--pink);
+}
+
+.inputGroup.valid input {
+  border: none;
+}
+.inputGroup.valid label {
+  color: var(--lightpink);
+}
+.inputGroup.invalid textarea {
+  border: 1px solid var(--pink);
+}
+.inputGroup.valid textarea {
+  border: none;
+}
+
+/* mensagem de erro de validação */
+
+.error {
+  color: #595959;
+  font-size: 12px;
+  margin: 4px;
+}
