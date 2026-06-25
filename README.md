@@ -4,7 +4,7 @@ Portfólio pessoal desenvolvido como projeto acadêmico no curso de Bacharelado 
 
 ## 🔗 Acesso
 
-[Ver projeto online]((https://vitoriaalves00.github.io/portfolio-pessoal/index.html))
+[Ver projeto online](https://vitoriaalves00.github.io/portfolio-pessoal/index.html)
 
 ## 💻 Sobre o projeto
 
