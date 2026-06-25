@@ -1,6 +1,6 @@
 /* trocando o svg do background */
 .otherBackground {
-  background-image: url(/src/assets/background-02.svg);
+  background-image: url(.../assets/background-02.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
