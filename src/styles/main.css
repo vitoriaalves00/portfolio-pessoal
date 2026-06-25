@@ -19,7 +19,7 @@
 /* main css para definições gerais das páginas como menu, background, títulos, subtitulos, tipo, tamanho e cor da fonte principal de texto*/
 
 body {
-  background-image: url(.../assets/background-01.svg);
+  background-image: url(/portfolio-pessoal/src/assets/background-01.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
